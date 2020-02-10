@@ -10,28 +10,30 @@ const AdminDashboard = () => {
     const adminLinks = () => {
         return (
             <DashCard className="mb-5">
-                <h4 className="card-header">Admin Links</h4>
-                <ul className="list-group">
-                    <li className="list-group-item">
-                        <Link className="nav-link" to="/create/category">Create Category</Link>
-                    </li>
-                    <li className="list-group-item">
-                        <Link className="nav-link" to="/create/product">Create Product</Link>
-                    </li>
-                    <li className="list-group-item">
-                        <Link className="nav-link" to="/admin/orders">View Orders</Link>
-                    </li>
-                    <li className="list-group-item">
-                        <Link className="nav-link" to="/admin/products">Manage Products</Link>
-                    </li>
-                </ul>
+                <DashCard.Body>
+                    <h4 className="card-header">Admin Links</h4>
+                    <ul className="list-group">
+                        <li className="list-group-item">
+                            <Link className="nav-link" to="/create/category">Create Category</Link>
+                        </li>
+                        <li className="list-group-item">
+                            <Link className="nav-link" to="/create/product">Create Product</Link>
+                        </li>
+                        <li className="list-group-item">
+                            <Link className="nav-link" to="/admin/orders">View Orders</Link>
+                        </li>
+                        <li className="list-group-item">
+                            <Link className="nav-link" to="/admin/products">Manage Products</Link>
+                        </li>
+                    </ul>
+                </DashCard.Body>
             </DashCard>
         );
     }
 
     const adminInfo = () => {
         return (
-            <DashCard className="mb-5">
+            <DashCard className="mb-5 col-md-6">
                 <DashCard.Body>
                     <DashCard.Title></DashCard.Title>
                     <ul className="list-group">
@@ -47,16 +49,12 @@ const AdminDashboard = () => {
     return (
         <div>
             <Layout title="Dashboard" description={`Hello ${name}`}>
-                ...
+        
             </Layout>
             <div className='card-container' id="dashboard-container">
                 <Col className="row">
-                    <div className="col-3">
-                        {adminLinks()}
-                    </div>
-                    <div className="col-9">
-                        {adminInfo()}
-                    </div>
+                    {adminLinks()}
+                    {adminInfo()}
                 </Col>
             </div>
         </div>

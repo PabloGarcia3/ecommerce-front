@@ -10,11 +10,11 @@ const Menu = ({history}) => {
 
     return (
         <Navbar bg="dark" expand="lg">
-            
-            <Navbar.Brand>
-                <img src="/taylormade.png" alt="" />
-            </Navbar.Brand>
-            
+            <Link to="/">
+                <Navbar.Brand>
+                    <img src="/taylormade.png" alt="" />
+                </Navbar.Brand>
+            </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-dark" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto" bg="dark">

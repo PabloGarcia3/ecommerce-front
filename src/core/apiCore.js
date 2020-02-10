@@ -12,7 +12,7 @@ export const getProducts = (sortBy) => {
 };
 
 export const getCategories = () => {
-    return fetch(`${API}/api/categories`, {
+    return fetch(`${API}/categories`, {
         method: 'GET'
     })
         .then(response => {
