@@ -40,7 +40,7 @@ const ManageProducts = () => {
                 
             </Layout> 
             <Col className="row">
-                <div className="col-12">
+                <div className="col-8">
                 <h2 className="text-center">
                     Total Products: {products.length} Products
                 </h2>
@@ -48,17 +48,18 @@ const ManageProducts = () => {
                         {products.map((p, i) => (
                             <li 
                                 key={i}
-                                className="list-group-item d-flex justify-content-between align-items-center"
+                                className="list-group-item justify-content-between align-items-center m-2"
                             >
                                 <strong>{p.name}</strong>
+                                <br></br>
                                 <Link to={`/admin/product/update/${p._id}`}>
-                                    <span className="badge badge-warning badge-pill">
+                                    <button className="btn btn-warning mr-3 mt-3">
                                         Update
-                                    </span>
+                                    </button>
                                 </Link>
-                                <span onClick={() => destroy(p._id)} className="badge badge-danger badge-pill">
+                                <button onClick={() => destroy(p._id)} className="btn btn-danger mt-3">
                                     Delete
-                                </span>
+                                </button>
                             </li>
                         ))}
                     </ul>

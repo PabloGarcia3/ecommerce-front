@@ -107,7 +107,7 @@ const UpdateProduct = ({match}) => {
     const newPostForm = () => (
         <form className="mb-3" onSubmit={clickSubmit}>
             <div className="form-group">
-                <label className="btn btn-secondary">
+                <label className="btn">
                     <input 
                         onChange={handleChange("photo")}
                         type="file" 
@@ -209,11 +209,11 @@ const UpdateProduct = ({match}) => {
 
     return (
         <div>
-            <Layout title="Create a new Product" description={`Hello ${user.name}`}>
+            <Layout title="Edit Product" description={`Hello ${user.name}`}>
                 
             </Layout>
             <div className='container-fluid' id="dashboard-container">
-                <div className="row">
+                <div className="row mt-5">
                     <div className="col-md-8 offset-md-2">  
                         {showLoading()}
                         {showSuccess()}
