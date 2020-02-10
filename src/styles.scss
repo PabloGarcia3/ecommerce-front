@@ -1,0 +1,124 @@
+
+
+.navbar a {
+    color: white;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+#search-area {
+    -webkit-box-shadow: 2px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 2px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 2px 5px 9px -1px rgba(0,0,0,0.16);
+}
+
+.carousel {
+    max-width: 1178px;
+    max-height: 890px;
+    align-content: center;
+    padding: 20px;
+}
+
+
+.card {
+    padding: 30px;
+    // background: rgba(43, 43, 43, 0.59);
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    // Box Shadow
+    -webkit-box-shadow: 2px 5px 9px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 2px 5px 9px -1px rgba(0,0,0,0.16);
+    box-shadow: 2px 5px 9px -1px rgba(0,0,0,0.16);
+    transition: ease-in-out 0.5s;
+    // Hover effects
+    &:hover {
+        -webkit-box-shadow: 2px 5px 9px 8px rgba(0,0,0,0.29);
+        -moz-box-shadow: 2px 5px 9px 8px rgba(0,0,0,0.29);
+        box-shadow: 2px 5px 9px 8px rgba(0,0,0,0.29);
+    }
+}
+
+
+.form-label {
+    color: #ffffff;
+}
+
+.form-group {
+    color: #ffffff;
+}
+
+#form-background {
+    background-image: url("https://www.golf.com/wp-content/uploads/2016/11/op363449midfinal.jpg");
+    background-color: #cccccc;
+    padding: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-image: url("https://thegolfnewsnet.com/wp-content/uploads/2019/01/300221-TM19_M5_IRN_DSC01069_v1-4278f0-original-1546628360.jpg");
+    background-color: #cccccc;
+    padding: 50px;
+    background-position: center center;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    // background-attachment: fixed;
+    background-size: cover;
+    #jumbotron-card {
+        padding: 30px;
+        background: rgba(43, 43, 43, 0.59);
+        color: #ffffff;
+        text-align: center;
+    }
+}
+
+#dashboard-container {
+    background-color: #cccccc;
+    padding: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-size: cover;
+}
+
+.product-img {
+    position: relative;
+    align-self: center;
+    width:  150px;
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+@media only screen and (max-width: 960px) {
+    .container.card-container {
+        justify-content: center;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px;
+        grid-gap: 10px;
+    }
+
+    #dashboard-container {
+        justify-content: center;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px;
+        grid-gap: 10px;
+    }
+    .card.product-img {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+
