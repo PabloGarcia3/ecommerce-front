@@ -1,8 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { Col, Carousel, Caption, Item } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import Search from './Search';
 import Layout from './Layout';
-import HomeCarousel from './HomeCarousel';
 import { getProducts } from './apiCore';
 import Card from './Card';
 
@@ -41,7 +40,6 @@ const Home = () => {
             <Layout title='Taylormade Golf' description='Taylormade the #1 Driver in golf!'>
                 
             </Layout>
-            <HomeCarousel />
             <div className="container">
                 <Search />
                 <div>
