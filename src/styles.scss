@@ -97,6 +97,13 @@
     background-size:     cover;
 }
 
+.products {
+    text-align: left;
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 @media only screen and (max-width: 960px) {
     .container.card-container {
         justify-content: center;

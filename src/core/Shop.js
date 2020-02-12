@@ -99,9 +99,9 @@ const Shop = () => {
             <Layout title='Shop' description='Taylormade the #1 Driver in golf!'>
                 
             </Layout>
-            <div className="container row">
+            <div className="container row" id="shop-container">
                 <div 
-                    className="col-4" 
+                    className="col-3" 
                     style={{ 
                         justifyContent: 'center', 
                         textAlign: 'left',
@@ -126,7 +126,7 @@ const Shop = () => {
                         />
                     </div> 
                 </div>
-                <div className="container col-8">
+                <div className="container col-9 products">
                     <h2>Products</h2>
                     <div className="card-container">
                         <Col className="row">
