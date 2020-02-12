@@ -92,7 +92,7 @@ const Signup = () => {
                 
             </Layout>
             <div id='form-background'>
-                <Card className='col-sm-8 offset-sm-2'>
+                <Card className='col-sm-8' style={{ marginRight: 'auto', marginLeft: 'auto', background: 'rgba(43, 43, 43, 0.59)' }}>
                     {showSuccess()}
                     {showError()}
                     {signUpForm()}

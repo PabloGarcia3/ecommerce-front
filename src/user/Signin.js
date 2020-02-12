@@ -95,8 +95,8 @@ const Signin = () => {
             <Layout title='Sign In' description='Sign in to your Taylormade Golf profile'>
                 
             </Layout>
-            <div id='form-background'>
-                <Card className='col-sm-8 offset-sm-2'>
+            <div classname="container-fluid" id='form-background'>
+                <Card className='col-sm-8' style={{ marginRight: 'auto', marginLeft: 'auto', background: 'rgba(43, 43, 43, 0.59)' }}>
                     {showLoading()}
                     {showError()}
                     {signUpForm()}
